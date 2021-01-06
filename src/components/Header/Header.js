@@ -2,6 +2,7 @@ import React from 'react';
 
 import Logo from '../UI/Logo';
 import HorizontalBar from '../UI/HorizontalBar';
+import Search from '../UI/Search';
 import NavLinksList from '../NavLinksList/NavLinksList';
 
 import classes from './Header.module.scss';
@@ -14,6 +15,9 @@ const header = () => (
     <div className={classes.Header}>
       <div className={classes.HeaderLogo}>
         <Logo />
+      </div>
+      <div className={classes.HeaderSearchContainer}>
+        <Search />
       </div>
       <div className={classes.HeaderLinkList}>
         <NavLinksList />
