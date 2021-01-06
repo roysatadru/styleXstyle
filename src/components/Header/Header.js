@@ -3,6 +3,7 @@ import React from 'react';
 import Logo from '../UI/Logo';
 import HorizontalBar from '../UI/HorizontalBar';
 import Search from '../UI/Search';
+import BtnLink from '../UI/BtnLink';
 import NavLinksList from '../NavLinksList/NavLinksList';
 
 import classes from './Header.module.scss';
@@ -18,6 +19,8 @@ const header = () => (
       </div>
       <div className={classes.HeaderSearchContainer}>
         <Search />
+        <BtnLink size='small'>Post a look</BtnLink>
+        <BtnLink size='small'>Login/Register</BtnLink>
       </div>
       <div className={classes.HeaderLinkList}>
         <NavLinksList />
