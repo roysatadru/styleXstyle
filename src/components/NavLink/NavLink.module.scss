@@ -10,6 +10,8 @@
   letter-spacing: 0.06rem;
   color: $color-grey-pink-2;
 
+  transition: color 200ms ease-in;
+
   &:hover,
   &:focus {
     color: $color-c;

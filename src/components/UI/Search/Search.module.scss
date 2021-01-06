@@ -12,6 +12,16 @@
 
   &Button {
     height: 45%;
+    transition: transform 200ms ease-in;
+    
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1.1);
+    }
     
     img {
       width: 100%;
@@ -28,6 +38,13 @@
     background-color: $color-grey-light-2;
     padding: 0 0.6rem;
     font-family: inherit;
-    color: $color-grey-pink-2;
+    color: $color-grey-pink-1;
+
+    transition: all 200ms ease-in;
+
+    &:focus {
+      border: 1px solid $color-grey-dark-1;
+      background-color: $color-white;
+    }
   }
 }
