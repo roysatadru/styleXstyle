@@ -2,16 +2,26 @@ import React from 'react';
 
 import Logo from '../UI/Logo';
 import HorizontalBar from '../UI/HorizontalBar';
+import NavLinksList from '../NavLinksList/NavLinksList';
 
 import classes from './Header.module.scss';
 
 const header = () => (
   <React.Fragment>
-    <HorizontalBar style={{ gridColumn: 'full-start / full-end' }} />
-    <div className={classes.Header}>
-      <Logo />
+    <div className={classes.HeaderBar}>
+      <HorizontalBar />
     </div>
-    <HorizontalBar style={{ gridColumn: 'full-start / full-end' }} />
+    <div className={classes.Header}>
+      <div className={classes.HeaderLogo}>
+        <Logo />
+      </div>
+      <div className={classes.HeaderLinkList}>
+        <NavLinksList />
+      </div>
+    </div>
+    <div className={classes.HeaderBar}>
+      <HorizontalBar />
+    </div>
   </React.Fragment>
 );
 
