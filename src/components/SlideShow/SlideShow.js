@@ -12,7 +12,7 @@ const images = importAll(require.context('../../assets/slide-show/', false, /\.(
 const slideShow = () => {
   const imageList = images.map((i, index) => (
     <div key={i.default} className="each-fade">
-      <img src={i.default} alt={`slide-show-pic-${index}`} />
+      <img src={i.default} alt={`slide-show-pic-${index + 1}`} />
     </div>
   ));
 
