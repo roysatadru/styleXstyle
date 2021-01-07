@@ -6,7 +6,6 @@ import classes from './App.module.scss';
 const App = () => (
   <Layout>
     <IndexPage />
-    <div className={classes.App}>Hello World!</div>
   </Layout>
 );
 
