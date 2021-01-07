@@ -1,19 +1,11 @@
 import HorizontalBar from '../UI/HorizontalBar';
 import FooterList from './FooterList';
+import { LINK_LISTS } from '../../shared/LinkLists';
 
 import classes from './Footer.module.scss';
 
 const footer = () => {
-  const linkLists = {
-    flaunt: [],
-    read: ['fashion', 'beauty', 'lifestyle', 'ask sxs', 'parties & events', 'blogs'],
-    watch: ['sXs Tv', 'interviews', 'c channel'],
-    shop: [],
-    subMap: {
-      'style:weddings': ['sw events'],
-      'charity auction': [],
-    },
-  };
+  const linkLists = { ...LINK_LISTS };
 
   const footerLists = [];
 
