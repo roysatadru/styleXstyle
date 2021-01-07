@@ -1,3 +1,25 @@
+.MultipleFooterList {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: start;
+  align-items: start;
+}
+
 .FooterList {
-  
+  margin-bottom: 3rem;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.FooterLinkList {
+  list-style-type: none;
+  line-height: 1;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 1rem;
+  row-gap: 1rem;
 }

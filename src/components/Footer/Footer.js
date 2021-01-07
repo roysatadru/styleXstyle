@@ -15,12 +15,22 @@ const footer = () => {
     },
   };
 
+  const footerLists = [];
+
+  for (const header in linkLists) {
+    footerLists.push(
+      <FooterList
+        key={header}
+        heading={header}
+        listOrMap={linkLists[header]}
+      />,
+    );
+  }
+
   return (
     <div className={classes.Footer}>
       <HorizontalBar />
-      <div className={classes.FooterLinkListContainers}>
-        <FooterList />
-      </div>
+      <div className={classes.FooterLinkListContainers}>{footerLists}</div>
     </div>
   );
 };

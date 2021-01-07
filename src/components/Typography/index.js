@@ -7,9 +7,9 @@ const typography = props => {
     case 'h3':
       return <h3 className={classes.H3}>{props.children}</h3>;
     case 'h4':
-      return <h4 className={classes.H3}>{props.children}</h4>;
+      return <h4 className={classes.H4}>{props.children}</h4>;
     case 'h5':
-      return <h5 className={classes.H3}>{props.children}</h5>;
+      return <h5 className={classes.H5}>{props.children}</h5>;
     default:
       return <div className={classes.BodyText}>{props.children}</div>;
   }

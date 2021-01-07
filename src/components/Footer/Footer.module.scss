@@ -4,7 +4,13 @@
   grid-column: center-start / center-end;
 
   &LinkListContainers {
-    padding: 4rem 0;
-    background-color: $color-grey-pink-3;
+    padding: 4rem 2rem 0 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    align-items: start;
+    justify-items: start;
+
+    justify-content: center;
   }
 }
