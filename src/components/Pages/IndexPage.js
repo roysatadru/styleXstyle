@@ -10,6 +10,7 @@ import TrendingLooksPost from '../PostTypes/TrendingLooksPost/TrendingLooksPost'
 import LatestStoriesPosts from '../PostTypes/LatestStoriesPosts/LatestStoriesPosts';
 import SideBarSectionOne from '../SideBarSections/SideBarSectionOne/SideBarSectionOne';
 import SideBarSectionShop from '../SideBarSections/SideBarSectionShop/SideBarSectionShop';
+import SideBarSectionDontMiss from '../SideBarSections/SideBarSectionDontMiss/SideBarSectionDontMiss';
 
 import classes from './IndexPage.module.scss';
 import tvEpisodePost1 from '../../assets/posts-pic/TV-Episode-post-1.jpg';
@@ -41,7 +42,12 @@ const indexPage = () => {
         <div className={classes.PageSideBarSectionOne}>
           <SideBarSectionOne />
         </div>
-        <SideBarSectionShop />
+        <div className={classes.PageSideBarSectionShop}>
+          <SideBarSectionShop />
+        </div>
+        <div className={classes.PageSideBarSectionDontMiss}>
+          <SideBarSectionDontMiss />
+        </div>
       </SideBarArea>
 
       <div className={classes.PageInstagramSection}>

@@ -39,6 +39,15 @@
   }
 }
 
-.PageSideBarSectionOne {
-  margin: 5rem 0;
+.PageSideBarSection {
+  &One {
+    margin: 5rem 0;
+  }
+
+  &Shop {
+    margin-bottom: 5rem;
+  }
+
+  &DontMiss {
+  }
 }
