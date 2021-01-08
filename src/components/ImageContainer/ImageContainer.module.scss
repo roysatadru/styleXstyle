@@ -11,4 +11,10 @@
     object-position: center;
     border-radius: inherit;
   }
+
+  &.positionTop {
+    img {
+      object-position: center top;
+    }
+  }
 }

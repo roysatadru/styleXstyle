@@ -7,6 +7,8 @@ const ImageContainer = props => {
   const [style, setStyle] = useState(null);
   const [resizeListener, sizes] = useResizeAware();
 
+  const classList = [classes.ImageContainer];
+
   useEffect(() => {
     switch (props.setheightorwidth) {
       case 'width':
@@ -26,8 +28,12 @@ const ImageContainer = props => {
     }
   }, [props.setheightorwidth, sizes.width, sizes.height]);
 
+  if (props.position === 'top') {
+    classList.push(classes.positionTop);
+  }
+
   return (
-    <div className={classes.ImageContainer} style={{ position: 'relative', ...style }}>
+    <div className={classList.join(' ')} style={{ position: 'relative', ...style }}>
       {resizeListener}
       <img {...props} alt={props.alt} />
     </div>
