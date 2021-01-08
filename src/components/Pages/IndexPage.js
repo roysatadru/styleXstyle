@@ -7,6 +7,7 @@ import Typography from '../Typography';
 import InstagramGallery from '../InstagramGallery/InstagramGallery';
 import TVEpisodePost from '../PostTypes/TVEpisodePost/TVEpisodePost';
 import TrendingLooksPost from '../PostTypes/TrendingLooksPost/TrendingLooksPost';
+import LatestStoriesPosts from '../PostTypes/LatestStoriesPosts/LatestStoriesPosts';
 
 import classes from './IndexPage.module.scss';
 import tvEpisodePost1 from '../../assets/posts-pic/TV-Episode-post-1.jpg';
@@ -29,8 +30,13 @@ const indexPage = () => {
         <div className={classes.PageTrendingLooksSection}>
           <TrendingLooksPost />
         </div>
+        <div className={classes.PageLatestStoriesSection}>
+          <LatestStoriesPosts />
+        </div>
       </MainPostsArea>
+
       <SideBarArea></SideBarArea>
+
       <div className={classes.PageInstagramSection}>
         <div className={classes.Instagram}>
           <Typography variant="h4">Instagram</Typography>

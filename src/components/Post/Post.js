@@ -5,14 +5,14 @@ import HorizontalBar from '../UI/HorizontalBar';
 
 import classes from './Post.module.scss';
 
-const post = props => {
+const post = ({ heading, children }) => {
   return (
     <React.Fragment>
       <div className={classes.PostHeader}>
-        <Typography variant="h3">{props.heading}</Typography>
+        <Typography variant="h3">{heading}</Typography>
         <HorizontalBar />
       </div>
-      {props.children}
+      {children}
     </React.Fragment>
   );
 };

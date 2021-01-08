@@ -5,6 +5,7 @@
   font-size: 3.35rem;
   color: $color-grey-pink-3;
   line-height: 1.8;
+  letter-spacing: 0.03rem;
 }
 
 .H4 {
@@ -26,6 +27,8 @@
 
 .BodyText {
   display: block;
-  line-height: 1.7;
+  line-height: 1.65;
   font-size: $default-font-size;
+  color: $color-grey-pink-1;
+  letter-spacing: 0.04rem;
 }

@@ -1,0 +1,42 @@
+@import '../../../../sass/variables';
+
+.AuthorSpan {
+  padding-left: 2rem;
+  font-style: italic;
+  font-size: 95%;
+  color: $color-c;
+  text-transform: capitalize;
+}
+
+.SinglePostDateTag {
+  font-size: 1.3rem;
+  color: $color-grey-light-3;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+
+  span:first-child {
+    padding-right: 1.5rem;
+    border-right: 1px solid currentColor;
+  }
+
+  span:last-child {
+    color: $color-grey-dark-2;
+  }
+}
+
+.PostHeading {
+  width: 75%;
+}
+
+.AlignMoreLooks {
+  position: absolute;
+  top: -3.2rem;
+  right: -6px;
+}

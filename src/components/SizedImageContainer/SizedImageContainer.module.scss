@@ -1,6 +1,7 @@
 @import '../../sass/variables';
 
 .SizedImageContainer {
+  position: relative;
   height: 34vw;
   width: 100%;
   border-radius: 3px;
