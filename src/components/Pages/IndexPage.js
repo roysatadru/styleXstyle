@@ -35,7 +35,11 @@ const indexPage = () => {
         </div>
       </MainPostsArea>
 
-      <SideBarArea></SideBarArea>
+      <SideBarArea>
+        <div className={classes.PageSideBarSection1}>
+          
+        </div>
+      </SideBarArea>
 
       <div className={classes.PageInstagramSection}>
         <div className={classes.Instagram}>
