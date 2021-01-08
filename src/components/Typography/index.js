@@ -11,7 +11,7 @@ const typography = props => {
     case 'h5':
       return <h5 className={classes.H5}>{props.children}</h5>;
     default:
-      return <div className={classes.BodyText}>{props.children}</div>;
+      return <span style={props.style} className={classes.BodyText}>{props.children}</span>;
   }
 };
 
