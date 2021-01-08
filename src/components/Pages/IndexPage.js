@@ -26,7 +26,9 @@ const indexPage = () => {
             postFooterText="Go Lunar New Year shopping with Sharon Au!"
           />
         </div>
-        <TrendingLooksPost />
+        <div className={classes.PageTrendingLooksSection}>
+          <TrendingLooksPost />
+        </div>
       </MainPostsArea>
       <SideBarArea></SideBarArea>
       <div className={classes.PageInstagramSection}>

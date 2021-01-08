@@ -17,7 +17,7 @@ const trendingLooksPost = () => {
       key={i.default}
       src={i.default}
       alt={`trending-looks-${index + 1}`}
-      position='top'
+      position="top"
       setheightorwidth={'width'}
     />
   ));
@@ -25,7 +25,9 @@ const trendingLooksPost = () => {
   return (
     <Post heading={'Trending Looks'.toUpperCase()}>
       <div className={classes.TrendingPostGallery}>{imgs}</div>
-      <MoreLooks />
+      <div>
+        <MoreLooks link="/more-trending-looks" />
+      </div>
     </Post>
   );
 };

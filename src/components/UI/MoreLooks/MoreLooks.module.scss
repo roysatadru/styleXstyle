@@ -1,0 +1,46 @@
+@import '../../../sass/variables';
+
+.MoreLooks {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-d;
+  background-color: $color-a;
+  font-size: 1.7rem;
+  line-height: 1.1;
+  width: 7rem;
+  padding: 2.3rem 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07rem;
+
+  transition: all 300ms ease-in;
+
+  backface-visibility: hidden;
+
+  & > span {
+    display: block;
+    transform: scale(1);
+    transition: inherit;
+
+    backface-visibility: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-grey-pink-3;
+
+    & > span {
+      transform: scale(0.93);
+    }
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $color-c;
+
+    & > span {
+      transform: scale(0.93);
+    }
+  }
+}

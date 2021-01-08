@@ -1,5 +1,9 @@
 import classes from './MoreLooks.module.scss';
 
-const moreLooks = props => ();
+const moreLooks = props => (
+  <a href={props.link} className={classes.MoreLooks}>
+    <span>More Looks</span>
+  </a>
+);
 
-import default moreLooks;
+export default moreLooks;

@@ -5,4 +5,8 @@
   grid-template-rows: repeat(2, min-content);
   grid-gap: 1vw;
   gap: 1vw;
+
+  & + div {
+    text-align: right;
+  }
 }
