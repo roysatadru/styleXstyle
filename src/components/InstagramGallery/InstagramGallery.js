@@ -1,19 +1,13 @@
 import ImageContainer from '../ImageContainer/ImageContainer';
+import withImportImagesFolder from '../../hoc/withImportImagesFolder';
 
 import classes from './InstagramGallery.module.scss';
 
-const importAll = r => {
-  return r.keys().map(r);
-};
-const images = importAll(
-  require.context('../../assets/instagram-gallery-pics/', false, /\.(png|jpe?g|svg)$/),
-);
-
-const instagramGallery = () => {
-  const imgs = images.map((i, index) => (
+const instagramGallery = props => {
+  const imgs = props.allImagesList.map((i, index) => (
     <ImageContainer
-      key={i.default}
-      src={i.default}
+      key={i}
+      src={i}
       alt={`instagram-photo-${index + 1}`}
       setheightorwidth={'width'}
     />
@@ -21,4 +15,7 @@ const instagramGallery = () => {
   return <div className={classes.InstagramGallery}>{imgs}</div>;
 };
 
-export default instagramGallery;
+export default withImportImagesFolder(
+  instagramGallery,
+  require.context('../../assets/instagram-gallery-pics/', false, /\.(png|jpe?g|svg)$/),
+);

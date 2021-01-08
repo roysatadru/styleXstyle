@@ -1,21 +1,15 @@
 import Post from '../../Post/Post';
 import ImageContainer from '../../ImageContainer/ImageContainer';
 import MoreLooks from '../../UI/MoreLooks';
+import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
 import classes from './TrendingLooksPost.module.scss';
 
-const importAll = r => {
-  return r.keys().map(r);
-};
-const images = importAll(
-  require.context('../../../assets/posts-pic/trending-looks-pics', false, /\.(png|jpe?g|svg)$/),
-);
-
-const trendingLooksPost = () => {
-  const imgs = images.map((i, index) => (
+const trendingLooksPost = props => {
+  const imgs = props.allImagesList.map((i, index) => (
     <ImageContainer
-      key={i.default}
-      src={i.default}
+      key={i}
+      src={i}
       alt={`trending-looks-${index + 1}`}
       position="top"
       setheightorwidth={'width'}
@@ -32,4 +26,4 @@ const trendingLooksPost = () => {
   );
 };
 
-export default trendingLooksPost;
+export default withImportImagesFolder(trendingLooksPost, require.context('../../../assets/posts-pic/trending-looks-pics/', false, /\.(png|jpe?g|svg)$/));
