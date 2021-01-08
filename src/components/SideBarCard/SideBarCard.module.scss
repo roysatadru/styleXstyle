@@ -1,0 +1,14 @@
+@import '../../sass/variables';
+
+.SideBarCard {
+  background-color: $color-d;
+  border: 1px solid $color-c;
+  border-radius: 2px;
+  box-shadow: 0 0.2rem 0.4rem rgba($color: $color-grey-pink-3, $alpha: 0.3);
+
+  &Border {
+    height: 1px;
+    width: 100%;
+    background-color: $color-c;
+  }
+}

@@ -1,5 +1,14 @@
 @import '../../sass/variables';
 
+.H2 {
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: $color-grey-pink-3;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .H3 {
   font-weight: 700;
   font-size: 3.35rem;

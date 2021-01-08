@@ -1,0 +1,28 @@
+@import '../../../sass/variables';
+
+.SideBarSectionShop {
+  display: grid;
+  padding: 0.5rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+
+  a {
+    display: block;
+    border: 1px solid $color-grey-pink-3;
+    border-radius: 2px;
+    transition: all 300ms ease-in;
+
+    &:hover,
+    &:focus {
+      z-index: 20;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      z-index: 20;
+      transform: scale(1.1);
+    }
+  }
+}
