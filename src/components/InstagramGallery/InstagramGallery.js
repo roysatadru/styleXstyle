@@ -10,7 +10,6 @@ const images = importAll(
 );
 
 const instagramGallery = () => {
-  console.log(images);
   const imgs = images.map((i, index) => (
     <ImageContainer
       key={i.default}

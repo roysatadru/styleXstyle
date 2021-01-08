@@ -5,4 +5,29 @@
 .PageInstagramSection {
   padding: 5rem 0;
   grid-column: col-start 1 / col-end 11;
+
+  .Instagram h4 {
+    @supports (-webkit-background-clip: text) or (-moz-background-clip: text) or
+      (background-clip: text) {
+        display: inline-block;
+        background-image: linear-gradient(
+          70deg,
+          #ffdc80,
+          #fcaf45,
+          #f77737,
+          #f56040,
+          #fd1d1d,
+          #e1306c,
+          #c13584,
+          #833ab4,
+          #5851db,
+          #405de6
+        );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent;
+    }
+    
+  }
 }

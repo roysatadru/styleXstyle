@@ -17,7 +17,9 @@ const indexPage = () => {
       <MainPostsArea></MainPostsArea>
       <SideBarArea></SideBarArea>
       <div className={classes.PageInstagramSection}>
-        <Typography variant='h4'>Instagram</Typography>
+        <div className={classes.Instagram}>
+          <Typography variant="h4">Instagram</Typography>
+        </div>
         <InstagramGallery />
       </div>
     </React.Fragment>

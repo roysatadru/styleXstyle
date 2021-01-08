@@ -8,7 +8,6 @@ const ImageContainer = props => {
   const [resizeListener, sizes] = useResizeAware();
 
   useEffect(() => {
-    console.log('triggered');
     switch (props.setheightorwidth) {
       case 'width':
         setStyle({
