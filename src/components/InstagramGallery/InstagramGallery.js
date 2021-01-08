@@ -9,7 +9,7 @@ const instagramGallery = props => {
       key={i}
       src={i}
       alt={`instagram-photo-${index + 1}`}
-      setheightorwidth={'width'}
+      setheightorwidth='width'
     />
   ));
   return <div className={classes.InstagramGallery}>{imgs}</div>;

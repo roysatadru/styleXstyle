@@ -8,13 +8,12 @@ import InstagramGallery from '../InstagramGallery/InstagramGallery';
 import TVEpisodePost from '../PostTypes/TVEpisodePost/TVEpisodePost';
 import TrendingLooksPost from '../PostTypes/TrendingLooksPost/TrendingLooksPost';
 import LatestStoriesPosts from '../PostTypes/LatestStoriesPosts/LatestStoriesPosts';
-import ImageContainer from '../ImageContainer/ImageContainer';
-import withImportImagesFolder from '../../hoc/withImportImagesFolder';
+import SideBarSectionOne from '../SideBarSections/SideBarSectionOne/SideBarSectionOne';
 
 import classes from './IndexPage.module.scss';
 import tvEpisodePost1 from '../../assets/posts-pic/TV-Episode-post-1.jpg';
 
-const indexPage = ({ allImagesList: sideBarImagesList }) => {
+const indexPage = () => {
   return (
     <React.Fragment>
       <div className={classes.PageSlideShow}>
@@ -38,8 +37,8 @@ const indexPage = ({ allImagesList: sideBarImagesList }) => {
       </MainPostsArea>
 
       <SideBarArea>
-        <div className={classes.PageSideBarSection1}>
-          <ImageContainer src={sideBarImagesList[0]} alt='DUMMY' />
+        <div className={classes.PageSideBarSectionOne}>
+          <SideBarSectionOne />
         </div>
       </SideBarArea>
 
@@ -53,7 +52,4 @@ const indexPage = ({ allImagesList: sideBarImagesList }) => {
   );
 };
 
-export default withImportImagesFolder(
-  indexPage,
-  require.context('../../assets/side-bar-pics/', false, /\.(png|jpe?g|svg)$/),
-);
+export default indexPage;

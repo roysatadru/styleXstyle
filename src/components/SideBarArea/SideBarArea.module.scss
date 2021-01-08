@@ -1,9 +1,9 @@
 .SideBarArea {
-  grid-column: col-start 9 / col-end 12;
+  grid-column: col-start 10 / col-end 12;
 
   & > div {
-    width: 85%;
-    height: 100%;
+    // width: 95%;
+    width: calc(100% - 1vw);
     margin-left: auto;
   }
 }
