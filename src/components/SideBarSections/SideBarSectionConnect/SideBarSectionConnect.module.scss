@@ -1,0 +1,56 @@
+@import '../../../sass/variables';
+
+.SideBarSectionConnect {
+  height: 9rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+
+  grid-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+
+  &Link {
+    height: 4.5rem;
+    width: 4.5rem;
+
+    color: $color-d;
+    svg {
+      display: block;
+      height: 100%;
+
+      transition: all 500ms ease-out;
+    }
+  }
+}
+
+.youtube {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ff0000;
+  }
+}
+.instagram {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #E1306C;
+  }
+}
+.twitter {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #1da1f2;
+  }
+}
+.facebook {
+  &:hover,
+  &:focus,
+  &:active {
+    color: #1778f2;
+  }
+}

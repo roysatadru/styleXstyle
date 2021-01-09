@@ -24,6 +24,9 @@ const typography = props => {
       return <h5 className={classes.H5}>{props.children}</h5>;
     default:
       classList.push(classes.BodyText);
+      if (props.darkTheme) {
+        classList.push(classes.darkTheme);
+      }
       if (props.italic) {
         classList.push(classes.italic);
       }

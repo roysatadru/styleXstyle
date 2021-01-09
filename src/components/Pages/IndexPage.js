@@ -11,6 +11,7 @@ import LatestStoriesPosts from '../MainAreaPostTypes/LatestStoriesPosts/LatestSt
 import SideBarSectionOne from '../SideBarSections/SideBarSectionOne/SideBarSectionOne';
 import SideBarSectionShop from '../SideBarSections/SideBarSectionShop/SideBarSectionShop';
 import SideBarSectionDontMiss from '../SideBarSections/SideBarSectionDontMiss/SideBarSectionDontMiss';
+import SideBarSectionConnect from '../SideBarSections/SideBarSectionConnect/SideBarSectionConnect';
 
 import classes from './IndexPage.module.scss';
 import tvEpisodePost1 from '../../assets/posts-pic/TV-Episode-post-1.jpg';
@@ -49,7 +50,7 @@ const indexPage = () => {
           <SideBarSectionDontMiss />
         </div>
         <div className={classes.PageSideBarSectionConnect}>
-          <SideBarSectionDontMiss />
+          <SideBarSectionConnect />
         </div>
       </SideBarArea>
 

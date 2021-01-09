@@ -47,9 +47,15 @@
   &.H4 {
     color: $color-d;
   }
+  &.BodyText {
+    color: $color-c;
+  }
 }
 
 .noLineHeight {
+  &.H4 {
+    margin-bottom: 0;
+  }
   &.H4,
   &.BodyText {
     line-height: 1;
