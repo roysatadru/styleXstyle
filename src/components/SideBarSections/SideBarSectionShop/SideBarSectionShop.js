@@ -1,7 +1,7 @@
 import SideBarCard from '../../SideBarCard/SideBarCard';
 import SideBarCardHeader from '../../SideBarCard/SideBarCardHeader/SideBarCardHeader';
 import Typography from '../../Typography';
-import ImageContainer from '../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../containers/ImageContainer/ImageContainer';
 import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
 import classes from './SideBarSectionShop.module.scss';
@@ -12,7 +12,7 @@ const sideBarSectionShop = props => {
       <ImageContainer
         src={item}
         alt={`shop products photo ${index + 1}`}
-        setheightorwidth="width"
+        setwidth
       />
     </a>
   ));

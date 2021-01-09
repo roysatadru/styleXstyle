@@ -1,6 +1,6 @@
 import Typography from '../../../Typography';
 import SizedImageContainer from '../../../SizedImageContainer/SizedImageContainer';
-import ImageContainer from '../../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../../containers/ImageContainer/ImageContainer';
 import MoreLooks from '../../../UI/MoreLooks';
 import SizedBox from '../../../UI/SizedBox';
 

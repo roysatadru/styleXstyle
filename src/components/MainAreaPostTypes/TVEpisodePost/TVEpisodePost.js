@@ -1,6 +1,6 @@
 import Post from '../../Post/Post';
 import SizedImageContainer from '../../SizedImageContainer/SizedImageContainer';
-import ImageContainer from '../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../containers/ImageContainer/ImageContainer';
 import SizedBox from '../../UI/SizedBox';
 import Typography from '../../Typography';
 

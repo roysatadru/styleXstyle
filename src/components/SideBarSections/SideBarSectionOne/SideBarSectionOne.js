@@ -1,4 +1,4 @@
-import ImageContainer from '../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../containers/ImageContainer/ImageContainer';
 import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
 import classes from './SideBarSectionOne.module.scss';
@@ -9,18 +9,18 @@ const sideBarSectionOne = props => (
       <ImageContainer
         src={props.allImagesList[0]}
         alt="A Mannequin wearing a fashionable cloth"
-        setheightorwidth="width"
+        setwidth
       />
       <ImageContainer
         src={props.allImagesList[1]}
         alt="A Wardrobe of clothes"
-        setheightorwidth="width"
+        setwidth
       />
     </div>
     <ImageContainer
       src={props.allImagesList[2]}
       alt="A woman holding shopping bags"
-      setheightorwidth="width"
+      setwidth
     />
   </div>
 );

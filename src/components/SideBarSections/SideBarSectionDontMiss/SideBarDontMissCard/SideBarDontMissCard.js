@@ -1,5 +1,5 @@
 import Typography from '../../../Typography';
-import ImageContainer from '../../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../../containers/ImageContainer/ImageContainer';
 
 import classes from './SideBarDontMissCard.module.scss';
 

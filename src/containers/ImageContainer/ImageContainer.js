@@ -10,23 +10,14 @@ const ImageContainer = props => {
   const classList = [classes.ImageContainer];
 
   useEffect(() => {
-    switch (props.setheightorwidth) {
-      case 'width':
-        setStyle({
-          height: `${sizes.width}px`,
-        });
-        break;
-
-      case 'height':
-        setStyle({
-          width: `${sizes.height}px`,
-        });
-        break;
-
-      default:
-        setStyle(null);
+    if (props.setwidth) {
+      setStyle({
+        height: `${sizes.width}px`,
+      });
+    } else {
+      setStyle(null);
     }
-  }, [props.setheightorwidth, sizes.width, sizes.height]);
+  }, [props.setwidth, sizes.width]);
 
   if (props.position === 'top') {
     classList.push(classes.positionTop);

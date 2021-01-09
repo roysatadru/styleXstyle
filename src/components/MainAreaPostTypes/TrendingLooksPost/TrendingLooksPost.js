@@ -1,5 +1,5 @@
 import Post from '../../Post/Post';
-import ImageContainer from '../../ImageContainer/ImageContainer';
+import ImageContainer from '../../../containers/ImageContainer/ImageContainer';
 import MoreLooks from '../../UI/MoreLooks';
 import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
@@ -12,7 +12,7 @@ const trendingLooksPost = props => {
       src={i}
       alt={`trending-looks-${index + 1}`}
       position="top"
-      setheightorwidth={'width'}
+      setwidth
     />
   ));
 

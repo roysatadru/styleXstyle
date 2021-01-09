@@ -1,4 +1,4 @@
-import ImageContainer from '../ImageContainer/ImageContainer';
+import ImageContainer from '../../containers/ImageContainer/ImageContainer';
 import withImportImagesFolder from '../../hoc/withImportImagesFolder';
 
 import classes from './InstagramGallery.module.scss';
@@ -9,7 +9,7 @@ const instagramGallery = props => {
       key={i}
       src={i}
       alt={`instagram-photo-${index + 1}`}
-      setheightorwidth='width'
+      setwidth
     />
   ));
   return <div className={classes.InstagramGallery}>{imgs}</div>;
