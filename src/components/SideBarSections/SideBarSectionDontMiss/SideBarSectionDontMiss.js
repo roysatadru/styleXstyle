@@ -1,21 +1,30 @@
 import SideBarCard from '../../SideBarCard/SideBarCard';
 import SideBarCardHeader from '../../SideBarCard/SideBarCardHeader/SideBarCardHeader';
 import Typography from '../../Typography';
-import ImageContainer from '../../ImageContainer/ImageContainer';
+import SideBarDontMissCard from './SideBarDontMissCard/SideBarDontMissCard';
 import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
-import classes from './SideBarSectionDontMiss.module.scss';
+const linkTexts = [
+  "Style: Wedding's Presents 'A Garden City'...",
+  'How to: Style Longer Bangs',
+  'In Good Company Launches First',
+  'Win Beauty Hampers By KLARITY Worth $1.5...',
+  'Teddy Tang: A Face to Watch in 2017',
+];
 
 const sideBarSectionDontMiss = props => {
-  const imagesGrid = props.allImagesList.map((item, index) => (
-    <a href={`/shop-product-${index + 1}`} key={item}>
-      <ImageContainer
-        key={item}
-        src={item}
-        alt={`shop products photo ${index + 1}`}
+  const imagesGrid = props.allImagesList.map((item, index) => {
+    const slug = item.split('.').slice(0, -2).join('').split('/').slice(-1).join('').slice(2);
+    return (
+      <SideBarDontMissCard
+        key={index}
+        linkText={linkTexts[index]}
+        link={`/${slug}`}
+        imgSource={item}
+        imgAltText={slug}
       />
-    </a>
-  ));
+    );
+  });
   return (
     <SideBarCard
       header={
@@ -24,7 +33,7 @@ const sideBarSectionDontMiss = props => {
         </SideBarCardHeader>
       }
     >
-      <div className={classes.SideBarSectionDontMiss}>{imagesGrid}</div>
+      {imagesGrid}
     </SideBarCard>
   );
 };

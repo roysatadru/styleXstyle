@@ -1,3 +1,60 @@
+@import '../../../../sass/variables';
+
 .SideBarDontMissCard {
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 8.1rem;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  div {
+    z-index: 1;
+  }
+
+  a {
+    padding: 2.4rem 1rem;
+    text-decoration: none;
+
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content;
+    align-items: center;
+    grid-gap: 2rem;
+    background-color: transparent;
+    z-index: 0;
+
+    span {
+      transition: all 0.4s ease-out;
+    }
+
+    .LinkEffect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: $color-a;
+      transform: translateX(101%);
+      transition: all 0.4s ease-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      span:first-child {
+        transform: translateX(0.6rem);
+      }
+      span {
+        color: $color-d;
+      }
+
+      .LinkEffect {
+        transform: translateX(0);
+      }
+    }
+  }
 }

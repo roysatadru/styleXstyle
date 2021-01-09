@@ -10,7 +10,6 @@ const sideBarSectionShop = props => {
   const imagesGrid = props.allImagesList.map((item, index) => (
     <a href={`/shop-product-${index + 1}`} key={item}>
       <ImageContainer
-        key={item}
         src={item}
         alt={`shop products photo ${index + 1}`}
         setheightorwidth="width"
@@ -22,7 +21,7 @@ const sideBarSectionShop = props => {
     <SideBarCard
       header={
         <SideBarCardHeader>
-          <Typography style={{ fontStyle: 'italic' }}>Get them now</Typography>
+          <Typography italic>Get them now</Typography>
           <Typography variant="h2">Shop</Typography>
         </SideBarCardHeader>
       }

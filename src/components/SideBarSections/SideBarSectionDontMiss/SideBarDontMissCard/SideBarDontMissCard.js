@@ -1,9 +1,16 @@
+import Typography from '../../../Typography';
+import ImageContainer from '../../../ImageContainer/ImageContainer';
+
 import classes from './SideBarDontMissCard.module.scss';
 
-const sideBarDontMissCard = () => (
+const sideBarDontMissCard = ({ link, linkText, imgSource, imgAltText }) => (
   <div className={classes.SideBarDontMissCard}>
-    <ImageContainer key={item} src={item} alt={`shop products photo ${index + 1}`} />
-    <a href={`/dont-miss-${index + 1}`} key={item}></a>
+    <ImageContainer src={imgSource} alt={imgAltText} />
+    <a href={link}>
+      <Typography noLineHeight>{linkText}</Typography>
+      <Typography noLineHeight>&gt;</Typography>
+      <span className={classes.LinkEffect}></span>
+    </a>
   </div>
 );
 

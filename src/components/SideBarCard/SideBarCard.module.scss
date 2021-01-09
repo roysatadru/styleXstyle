@@ -6,6 +6,10 @@
   border-radius: 2px;
   box-shadow: 0 0.2rem 0.4rem rgba($color: $color-grey-pink-3, $alpha: 0.3);
 
+  &.darkTheme {
+    background-color: $color-grey-pink-3;
+  }
+
   &Border {
     height: 1px;
     width: 100%;

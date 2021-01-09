@@ -48,6 +48,9 @@ const indexPage = () => {
         <div className={classes.PageSideBarSectionDontMiss}>
           <SideBarSectionDontMiss />
         </div>
+        <div className={classes.PageSideBarSectionConnect}>
+          <SideBarSectionDontMiss />
+        </div>
       </SideBarArea>
 
       <div className={classes.PageInstagramSection}>

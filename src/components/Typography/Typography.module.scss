@@ -38,6 +38,33 @@
   display: block;
   line-height: 1.65;
   font-size: $default-font-size;
+  font-weight: 400;
   color: $color-grey-pink-1;
   letter-spacing: 0.04rem;
+}
+
+.darkTheme {
+  &.H4 {
+    color: $color-d;
+  }
+}
+
+.noLineHeight {
+  &.H4,
+  &.BodyText {
+    line-height: 1;
+  }
+}
+
+.uppercase {
+  &.H4 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.italic {
+  &.BodyText {
+    font-style: italic;
+  }
 }

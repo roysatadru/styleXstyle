@@ -10,7 +10,7 @@ const tvEpisodePost = ({ postHeading, imageSrc, imageAltText, postFooterText }) 
       <ImageContainer src={imageSrc} alt={imageAltText} />
     </SizedImageContainer>
     <SizedBox height="4rem" width="100%" />
-    <Typography style={{ fontStyle: 'italic' }}>{postFooterText}</Typography>
+    <Typography italic>{postFooterText}</Typography>
   </Post>
 );
 
