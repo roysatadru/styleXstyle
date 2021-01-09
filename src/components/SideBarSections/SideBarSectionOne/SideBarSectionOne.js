@@ -9,18 +9,18 @@ const sideBarSectionOne = props => (
       <ImageContainer
         src={props.allImagesList[0]}
         alt="A Mannequin wearing a fashionable cloth"
-        setwidth
+        setwidth='true'
       />
       <ImageContainer
         src={props.allImagesList[1]}
         alt="A Wardrobe of clothes"
-        setwidth
+        setwidth='true'
       />
     </div>
     <ImageContainer
       src={props.allImagesList[2]}
       alt="A woman holding shopping bags"
-      setwidth
+      setwidth='true'
     />
   </div>
 );

@@ -12,7 +12,7 @@ const sideBarSectionShop = props => {
       <ImageContainer
         src={item}
         alt={`shop products photo ${index + 1}`}
-        setwidth
+        setwidth='true'
       />
     </a>
   ));

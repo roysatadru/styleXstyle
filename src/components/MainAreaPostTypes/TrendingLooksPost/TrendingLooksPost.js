@@ -12,7 +12,7 @@ const trendingLooksPost = props => {
       src={i}
       alt={`trending-looks-${index + 1}`}
       position="top"
-      setwidth
+      setwidth='true'
     />
   ));
 
