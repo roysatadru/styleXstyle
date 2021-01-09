@@ -1,14 +1,8 @@
 import Post from '../../Post/Post';
 import LatestStoriesSinglePost from './LatestStoriesSinglePost/LatestStoriesSinglePost';
+import withImportImagesFolder from '../../../hoc/withImportImagesFolder';
 
 import classes from './LatestStoriesPosts.module.scss';
-
-const importAll = r => {
-  return r.keys().map(r);
-};
-const images = importAll(
-  require.context('../../../assets/posts-pic/latest-stories-pics/', false, /\.(png|jpe?g|svg)$/),
-);
 
 const postsData = [
   {
@@ -18,7 +12,6 @@ const postsData = [
     bodyText:
       "Fengshui master Joey Yap reveals when's the best day for your animal zodiac to start work in the year of the Fire Rooster.",
     author: 'Style Weddings',
-    image: images[0].default,
     imgAltText: 'A new lunar year',
     slug: '/',
   },
@@ -28,7 +21,6 @@ const postsData = [
     heading: 'Useful Tips to Walking Down the Aisle with Your Dog',
     bodyText: 'I woof you.',
     author: 'Chermaine Ng',
-    image: images[1].default,
     imgAltText: 'A dog with a flower in its mouth',
     slug: '/',
   },
@@ -38,22 +30,24 @@ const postsData = [
     heading: '8 Hipster Wedding Venues in Singapore',
     bodyText: "You won't find any hotel function rooms here.",
     author: 'Chelsea Tan',
-    image: images[2].default,
     imgAltText: 'A wedding party',
     slug: '/',
   },
 ];
 
-const latestStoriesPosts = () => {
+const latestStoriesPosts = props => {
   return (
     <Post heading={'Latest Stories'.toUpperCase()}>
       <div className={classes.LatestStoriesPosts}>
-        {postsData.map((pD, index) => (
-          <LatestStoriesSinglePost {...pD} key={index + 1} />
+        {props.allImagesList.map((i, index) => (
+          <LatestStoriesSinglePost {...postsData[index]} image={i} key={index} />
         ))}
       </div>
     </Post>
   );
 };
 
-export default latestStoriesPosts;
+export default withImportImagesFolder(
+  latestStoriesPosts,
+  require.context('../../../assets/posts-pic/latest-stories-pics/', false, /\.(png|jpe?g|svg)$/),
+);
